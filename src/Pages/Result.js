@@ -16,11 +16,19 @@ const Result = () => {
 			<div className='container mx-auto pt-12 '>
 				<h3 className='text-center text-xl mb-2'>Name: {issues?.name}</h3>
 				<h3 className='text-center text-xl mb-5'>Website Url: {issues?.address}</h3>
-          <div className='tabs flex justify-center'>
-				<span id='error' className={`tab tab-bordered text-[#ff3333] text-2xl uppercase ${selected === 'error' && "tab-active"}`} onClick={(e)=>onSelectedChange(e)}>Error</span>
-				<span id='warning' className={`uppercase text-[#ff9966] text-2xl tab tab-bordered ${selected==='warning'&&"tab-active borderWarning"}`} onClick={onSelectedChange}>Warning</span>
-				{/* <span id='notice' className={`uppercase  text-2xl tab tab-bordered ${selected==='notice'&&"tab-active border-warning"}`} onClick={onSelectedChange}>Notice</span> */}
-		</div>
+				<div className='tabs flex justify-center'>
+					<div className='indicator mr-5'>
+						<span className="indicator-item  badge badge-secondary">{issues?.error.length }</span> 
+						<span id='error' className={`tab tab-bordered text-[#ff3333] text-2xl uppercase ${selected === 'error' && "tab-active"}`} onClick={(e) => onSelectedChange(e)}>Error</span>
+					</div>
+					
+					<div className='indicator'>
+						<span className="indicator-item  badge badge-secondary">{issues?.warning.length }</span> 
+						<span id='warning' className={`uppercase text-[#ff9966] text-2xl tab tab-bordered ${selected==='warning'&&"tab-active borderWarning"}`} onClick={onSelectedChange}>Warning</span>
+					</div>
+					
+					{/* <span id='notice' className={`uppercase  text-2xl tab tab-bordered ${selected==='notice'&&"tab-active border-warning"}`} onClick={onSelectedChange}>Notice</span> */}
+				</div>
 			<hr className='mt-2'/>	
 			<div>
 					

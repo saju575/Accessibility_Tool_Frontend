@@ -26,7 +26,7 @@ const Home = () => {
     }
     else {
       const falseData = await response.json()
-     // console.log(falseData)
+      console.log(falseData)
       setIssues(falseData)
       setLoading(false)
       setError(false)
