@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap"); */
+
+* {
+	/* font-family: "Quicksand", sans-serif; */
+	scroll-behavior: smooth;
+	/* font-family: "Libre Franklin", sans-serif; */
+	background-color:'#c0c0c0';
+	/* background-color: #36D399; */
+	/* overflow-x: hidden; */
+	padding:0;
+	margin:0;
+}
+
+.bgWarning{
+	background-color: #ff9966;
+}
+.bgNotice{
+	background-color: #ebe7e7;
+	opacity: .8;
+}
+.bgError{
+	background-color: #c73e1d;
+	opacity: .9;
+}
+.broderWarning{
+	border-color: #ff9966;
+}
+.broderNotice{
+	border-color: #ebe7e7;
+}
+.broderError{
+	border-color: #ff3333;
+}
